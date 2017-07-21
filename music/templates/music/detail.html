@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Music</title>
+    {% load static %}
+    <link href="{% static 'music/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'music/bootstrap-theme.css' %}" rel= "stylesheet">
+    <link rel="stylesheet" href="{% static 'music/main.css' %}">
+  </head>
+  <body>
+    <div id = "page">
+      <div class="container">
+        <div class="col-md-12">
+          <header>
+            <div class="ascii-title">
+              <a href="{% url "index" %}">
+××   ××   ××   ××    ××××   ××   ××××
+××× ×××   ××   ××   ××      ××  ××
+×× × ××   ××   ××     ××    ××  ××
+××   ××   ××   ××      ××   ××  ××
+××   ××   ×××××××   ××××    ××   ××××
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------          </a>
+            </div>
+          </header>
+          <div class="col-md-4">
+              <img src="{{album.album_logo}}" alt="" />
+          </div>
+          <div class="col-md-8">
+                <h2 class="album-title">{{album.album_title}}</h2>
+                <h3 class="album-artist">{{album.artist}}</h3>
+
+                <ul class="list-songs">
+                  {% if album.song_set.count %}
+                  {% for song in album.song_set.all %}
+                    <li class="list-songs-item"><p>[*]{{ song.song_title }} - {{song.file_type}}</p></li>
+                  {% endfor %}
+                  {% else %}
+                  <li class="list-songs-item"><p class = "no-songs">No songs to display</p></li>
+                  {% endif %}
+                </ul>
+          </div>
+      </div>
+    </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+
+  </body>
+</html>

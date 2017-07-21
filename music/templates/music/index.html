@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Music</title>
+    {% load static %}
+    <link href="{% static 'music/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'music/bootstrap-theme.css' %}" rel= "stylesheet">
+    <link rel="stylesheet" href="{% static 'music/main.css' %}">
+  </head>
+  <body>
+    <div id = "page">
+      <div class="container">
+        <div class="col-md-12">
+          <header>
+            <div class="ascii-title">
+              <a href="{% url "index" %}">
+××   ××   ××   ××    ××××   ××   ××××
+××× ×××   ××   ××   ××      ××  ××
+×× × ××   ××   ××     ××    ××  ××
+××   ××   ××   ××      ××   ××  ××
+××   ××   ×××××××   ××××    ××   ××××
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------          </a>
+            </div>
+          </header>
+            {% if all_albums %}
+              <ul class="list-albums">
+                {% for album in all_albums %}
+                <li class="list-albums-item"><a href = "/music/{{album.id}}/">{{album.album_title}}</a></li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <h3>You don't have any albums</h3>
+            {% endif %}
+      </div>
+  </div>
+  </div>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

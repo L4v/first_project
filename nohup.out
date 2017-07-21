@@ -1,0 +1,797 @@
+[17/Jul/2017 15:16:11] "GET / HTTP/1.1" 200 1716
+[17/Jul/2017 15:16:12] "GET / HTTP/1.1" 200 1716
+[17/Jul/2017 15:19:56] "GET /admin/ HTTP/1.1" 302 0
+[17/Jul/2017 15:19:56] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[17/Jul/2017 15:19:56] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[17/Jul/2017 15:19:56] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[17/Jul/2017 15:19:56] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[17/Jul/2017 15:19:56] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[17/Jul/2017 15:19:56] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 15:15:49
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 15:22:35
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 15:28:36
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f7d26003ed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include.music.urls),
+AttributeError: 'function' object has no attribute 'music'
+Unhandled exception in thread started by <function wrapper at 0x7fe4db4c9ed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 5, in <module>
+    url(r'^$', views.index, name='index'),
+AttributeError: 'module' object has no attribute 'index'
+Unhandled exception in thread started by <function wrapper at 0x7fe60d539ed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 5, in <module>
+    url(r'^$', views.index, name='index'),
+AttributeError: 'module' object has no attribute 'index'
+Unhandled exception in thread started by <function wrapper at 0x7f547b179ed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 5, in <module>
+    url(r'^$', views.index, name='index'),
+AttributeError: 'module' object has no attribute 'index'
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 15:30:45
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[17/Jul/2017 15:31:16] "GET /admin/login/?next=/music HTTP/1.1" 200 1648
+[17/Jul/2017 15:31:16] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[17/Jul/2017 15:31:16] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[17/Jul/2017 15:31:16] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[17/Jul/2017 15:31:25] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[17/Jul/2017 15:31:29] "GET /music HTTP/1.1" 301 0
+[17/Jul/2017 15:31:29] "GET /music/ HTTP/1.1" 200 15
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 15:31:01
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 15:33:01
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 15:33:18
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 15:52:27
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[17/Jul/2017 17:14:23] "GET /admin HTTP/1.1" 301 0
+[17/Jul/2017 17:14:24] "GET /admin/ HTTP/1.1" 302 0
+[17/Jul/2017 17:14:24] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[17/Jul/2017 17:14:24] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[17/Jul/2017 17:14:24] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[17/Jul/2017 17:14:24] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[17/Jul/2017 17:14:24] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[17/Jul/2017 17:14:24] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[17/Jul/2017 17:14:29] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[17/Jul/2017 17:14:29] "GET /admin/ HTTP/1.1" 200 2780
+[17/Jul/2017 17:14:29] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[17/Jul/2017 17:14:29] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[17/Jul/2017 17:14:29] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[17/Jul/2017 17:14:29] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 16:25:34
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[17/Jul/2017 17:16:05] "GET /admin/ HTTP/1.1" 200 3410
+[17/Jul/2017 17:16:06] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[17/Jul/2017 17:16:06] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[17/Jul/2017 17:16:06] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[17/Jul/2017 17:16:06] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[17/Jul/2017 17:16:06] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[17/Jul/2017 17:16:08] "GET /admin/music/album/ HTTP/1.1" 200 4401
+[17/Jul/2017 17:16:08] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[17/Jul/2017 17:16:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[17/Jul/2017 17:16:08] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[17/Jul/2017 17:16:08] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[17/Jul/2017 17:16:08] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[17/Jul/2017 17:16:08] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[17/Jul/2017 17:16:08] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[17/Jul/2017 17:16:08] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[17/Jul/2017 17:16:08] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[17/Jul/2017 17:16:08] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[17/Jul/2017 17:16:08] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[17/Jul/2017 17:16:11] "GET /admin/music/album/2/change/ HTTP/1.1" 200 5767
+[17/Jul/2017 17:16:11] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[17/Jul/2017 17:16:11] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[17/Jul/2017 17:16:11] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[17/Jul/2017 17:16:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[17/Jul/2017 17:16:11] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[17/Jul/2017 17:16:15] "GET /admin/music/album/ HTTP/1.1" 200 4401
+[17/Jul/2017 17:16:29] "GET /admin/music/album/2/change/ HTTP/1.1" 200 5767
+[17/Jul/2017 17:16:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[17/Jul/2017 17:16:40] "POST /admin/music/album/2/change/ HTTP/1.1" 302 0
+[17/Jul/2017 17:16:40] "GET /admin/music/album/ HTTP/1.1" 200 4588
+[17/Jul/2017 17:16:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[17/Jul/2017 17:16:40] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:16:03
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:24:47
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7fc84fdbc500>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 8, in <module>
+    url(r'^(?P<album_id>)$'),
+TypeError: url() takes at least 2 arguments (1 given)
+Unhandled exception in thread started by <function wrapper at 0x7fc405755500>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 8, in <module>
+    url(r'^(?P<album_id>[0-9]+)$', ),
+TypeError: url() takes at least 2 arguments (1 given)
+Unhandled exception in thread started by <function wrapper at 0x7f5a3e5c3500>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 8, in <module>
+    url(r'^(?P<album_id>[0-9]+)$', ),
+TypeError: url() takes at least 2 arguments (1 given)
+Unhandled exception in thread started by <function wrapper at 0x7f0d01eac500>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 8, in <module>
+    url(r'^(?P<album_id>[0-9]+)$', ),
+TypeError: url() takes at least 2 arguments (1 given)
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:31:30
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:31:40
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[17/Jul/2017 17:32:42] "GET /music HTTP/1.1" 301 0
+[17/Jul/2017 17:32:42] "GET /music/ HTTP/1.1" 200 15
+[17/Jul/2017 17:32:52] "GET /music/1 HTTP/1.1" 301 0
+[17/Jul/2017 17:32:52] "GET /music/1/ HTTP/1.1" 200 32
+[17/Jul/2017 17:32:59] "GET /music/ HTTP/1.1" 200 15
+[17/Jul/2017 17:33:02] "GET /music/2 HTTP/1.1" 301 0
+[17/Jul/2017 17:33:02] "GET /music/2/ HTTP/1.1" 200 32
+[17/Jul/2017 17:33:09] "GET /music/3/ HTTP/1.1" 200 32
+[17/Jul/2017 17:33:11] "GET /music/1/ HTTP/1.1" 200 32
+[17/Jul/2017 17:33:19] "GET /music/100/ HTTP/1.1" 200 34
+[17/Jul/2017 17:33:23] "GET /music/100900000000000000000000000/ HTTP/1.1" 200 58
+[17/Jul/2017 17:33:27] "GET /music/10090000000000000000000000000000000000000000000000000000/ HTTP/1.1" 200 87
+[17/Jul/2017 17:33:30] "GET /music/1/ HTTP/1.1" 200 32
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:32:32
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:35:21
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:36:00
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:37:33
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:37:51
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[17/Jul/2017 17:38:50] "GET /music/1/ HTTP/1.1" 200 32
+[17/Jul/2017 17:38:51] "GET /music/1/ HTTP/1.1" 200 32
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:38:28
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:39:15
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[17/Jul/2017 17:39:32] "GET /music/1/ HTTP/1.1" 200 32
+[17/Jul/2017 17:39:33] "GET /music/ HTTP/1.1" 200 84
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:39:29
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[17/Jul/2017 17:39:54] "GET /music/ HTTP/1.1" 200 96
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:39:52
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /music/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/views.py", line 12, in index
+    html += '<a href = "'+ url +'#''">album.'+ album_title+ '</a></br>'
+NameError: global name 'album_title' is not defined
+[17/Jul/2017 17:40:10] "GET /music/ HTTP/1.1" 500 73352
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:40:09
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[17/Jul/2017 18:50:27] "GET /music/ HTTP/1.1" 200 74
+Not Found: /music2/
+[17/Jul/2017 18:50:30] "GET /music2/ HTTP/1.1" 404 2064
+[17/Jul/2017 18:57:03] "GET /music/2 HTTP/1.1" 301 0
+[17/Jul/2017 18:57:03] "GET /music/2/ HTTP/1.1" 200 32
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 17:40:24
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f7bb4827500>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 2, in <module>
+    from . import views
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/views.py", line 15
+    html += '<a href = "'+ url +"></a></br>'
+                                           ^
+SyntaxError: EOL while scanning string literal
+[17/Jul/2017 18:58:57] "GET /music/2/ HTTP/1.1" 200 32
+Not Found: /music2/
+[17/Jul/2017 18:59:02] "GET /music2/ HTTP/1.1" 404 2064
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 18:58:55
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /music2/
+[17/Jul/2017 18:59:14] "GET /music2/ HTTP/1.1" 404 2064
+Not Found: /music2/
+[17/Jul/2017 18:59:16] "GET /music2/ HTTP/1.1" 404 2064
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 18:59:14
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /music2/
+[17/Jul/2017 18:59:29] "GET /music2/ HTTP/1.1" 404 2064
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 18:59:23
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /music2/
+[17/Jul/2017 19:00:12] "GET /music2/ HTTP/1.1" 404 2064
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 19:00:04
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f5a14776500>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 2, in <module>
+    from . import views
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/views.py", line 18, in <module>
+    x.get()
+NameError: name 'x' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f457d9a6500>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 2, in <module>
+    from . import views
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/views.py", line 18, in <module>
+    x.get()
+NameError: name 'x' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f6507336500>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/first_project/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/urls.py", line 2, in <module>
+    from . import views
+  File "/home/jigsaw/Desktop/Workspace/Python/django/first_project/music/views.py", line 18, in <module>
+    x.get()
+NameError: name 'x' is not defined
+Error: That port is already in use.
+Not Found: /music2/
+[17/Jul/2017 19:10:43] "GET /music2/ HTTP/1.1" 404 2064
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 19:10:36
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /music2/
+[17/Jul/2017 19:11:07] "GET /music2/ HTTP/1.1" 404 2064
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 17, 2017 - 19:11:01
+Django version 1.11.3, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /music2/
+[17/Jul/2017 19:11:28] "GET /music2/ HTTP/1.1" 404 2064
+Not Found: /music1/
+[17/Jul/2017 19:11:31] "GET /music1/ HTTP/1.1" 404 2064

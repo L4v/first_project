@@ -1,0 +1,69 @@
+html{
+  -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;
+}
+@font-face{
+  font-family: 'Share Tech Mono'
+  font-style:normal;
+  font-weight:400;
+  src:url(https://fonts.gstatic.com/s/sharetechmono/v6/RQxK-3RA0Lnf3gnnnNrAsYdJ2JT0J65PSe7wdxAnx_I.woff2) format('woff2');
+}
+body{
+  font-family: 'Share Tech Mono', Monospace, Courier;
+  background-color:#212121;
+  color:#c8c8c8;
+  text-transform:uppercase;
+}
+header{
+  width: 100%;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+#page{
+  padding: 35px 60px;
+}
+p, h1, h2, h3, a{
+  color:#fff;
+}
+.content{
+  width:100%;
+}
+.ascii-title{
+  white-space:pre;
+  margin: 0 0 50px 0;
+}
+.ascii-title a, .list-albums-item a{
+  text-decoration:none;
+  color:#fff;
+}
+.list-albums{
+  word-wrap: break-word;
+  letter-spacing:0.1px;
+  font-size:16px;
+  padding-left: 0em;
+}
+li{
+  margin-bottom:15px;
+  list-style-type:none;
+  font-weight:400;
+  font-size: 1.5em;
+ }
+.album-title{
+  color:white;
+  font-size:2em;
+  margin:0px;
+  padding:0px;
+}
+.album-artist{
+  color:white;
+  font-size:1.5em;
+  margin:0px;
+  padding:0px;
+}
+.list-songs{
+  padding:0px;
+  margin-top:2em;
+  font-size:1em;
+}
+.no-songs{
+  color:#c8c8c8;
+}
