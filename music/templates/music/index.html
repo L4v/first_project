@@ -12,7 +12,7 @@
         <div class="col-md-12">
           <header>
             <div class="ascii-title">
-              <a href="{% url "index" %}">
+              <a href="{% url "music:index" %}">
 ××   ××   ××   ××    ××××   ××   ××××
 ××× ×××   ××   ××   ××      ××  ××
 ×× × ××   ××   ××     ××    ××  ××
@@ -24,7 +24,7 @@
             {% if all_albums %}
               <ul class="list-albums">
                 {% for album in all_albums %}
-                <li class="list-albums-item"><a href = "/music/{{album.id}}/">{{album.album_title}}</a></li>
+                <li class="list-albums-item"><a href = {% url 'music:detail' album.id %}>[×]{{album.album_title}}</a></li>
                 {% endfor %}
               </ul>
             {% else %}

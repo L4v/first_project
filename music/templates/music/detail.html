@@ -12,13 +12,13 @@
         <div class="col-md-12">
           <header>
             <div class="ascii-title">
-              <a href="{% url "index" %}">
+              <a href="{% url "music:index" %}">
 ××   ××   ××   ××    ××××   ××   ××××
 ××× ×××   ××   ××   ××      ××  ××
 ×× × ××   ××   ××     ××    ××  ××
 ××   ××   ××   ××      ××   ××  ××
 ××   ××   ×××××××   ××××    ××   ××××
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------          </a>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------          </a>
             </div>
           </header>
           <div class="col-md-4">
@@ -30,9 +30,27 @@
 
                 <ul class="list-songs">
                   {% if album.song_set.count %}
-                  {% for song in album.song_set.all %}
-                    <li class="list-songs-item"><p>[*]{{ song.song_title }} - {{song.file_type}}</p></li>
-                  {% endfor %}
+                  <!--{% for song in album.song_set.all %}-->
+                    <!--<li class="list-songs-item"><p>[×]{{ song.song_title }} - {{song.file_type}}</p></li>-->
+                    <!--<li class="list-songs-item">
+                    </li>-->
+
+                  <!--{% endfor %}-->
+
+                      <form action="{% url 'music:favorite' album.id %}" method="post">
+                      {% csrf_token %}
+                      {% for song in album.song_set.all %}
+                          <li class = "list-songs-item"><p>{{ song.song_title }} - {{ song.file_type }}
+                          <label for="song {{ forloop.counter }}"><input type="radio" id="song{{ forloop.counter }}" name="song" value="{{ song.id }}">
+                            {% if song.is_favorite %}
+                              [*]
+                                {% endif %}
+                          </p></li>
+                          </label> </br>
+                      {% endfor %}
+                      <input type="submit" value="Favorite"></input>
+                  </form>
+
                   {% else %}
                   <li class="list-songs-item"><p class = "no-songs">No songs to display</p></li>
                   {% endif %}
@@ -41,7 +59,16 @@
       </div>
     </div>
     </div>
-    <script src="js/bootstrap.js"></script>
+
+    {% if error_message %}
+      <p>
+        <strong>{{ error_message }}</strong>
+      </p>
+    {% endif %}
+
+
+
+    <!--<script src="js/bootstrap.js"></script>-->
 
   </body>
 </html>
