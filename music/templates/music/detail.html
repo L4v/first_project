@@ -48,6 +48,9 @@
                           </p></li>
                           </label> </br>
                       {% endfor %}
+                      {% if error_message %}
+                        <p><strong>{{ error_message }}</strong></p>
+                      {% endif %}
                       <input type="submit" value="Favorite"></input>
                   </form>
 
@@ -59,15 +62,6 @@
       </div>
     </div>
     </div>
-
-    {% if error_message %}
-      <p>
-        <strong>{{ error_message }}</strong>
-      </p>
-    {% endif %}
-
-
-
     <!--<script src="js/bootstrap.js"></script>-->
 
   </body>

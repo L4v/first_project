@@ -24,6 +24,6 @@ def favorite(request, album_id):
     except (KeyError, Song.DoesNotExist):
         return render(request, 'music/detail.html', {'album': album, 'error_message': 'You did not select a valid song.', })
     else:
-        selected_song.is_favorite = True
+        selected_song.is_favorite = not selected_song.is_favorite
         selected_song.save()
     return render(request, 'music/detail.html', {'album': album})
