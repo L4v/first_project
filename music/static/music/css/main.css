@@ -96,3 +96,12 @@ li{
 .no-songs{
   color:#c8c8c8;
 }
+
+@media only screen and (max-device-width: 480px) {
+  .ascii-title a{
+    font-size:1.5vw;
+  }
+  .list-albums-item a{
+    font-size:3vw;
+  }
+	}
