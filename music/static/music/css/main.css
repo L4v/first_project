@@ -44,6 +44,18 @@ header{
   text-decoration:none;
   background-color:#212121;
 }
+.navbar-form{
+  padding:0px;
+  padding-top:0.9em;
+  margin:0px;
+}
+.srch-btn{
+  background-color:transparent;
+  border: none;
+}
+.srch-btn:hover, .srch-btn:focus{
+  color:#fff;
+}
 .icon-bar{
   background-color:#fff;
 }
