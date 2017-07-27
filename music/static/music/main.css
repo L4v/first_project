@@ -18,6 +18,19 @@ header{
   width: 100%;
   overflow: hidden;
   letter-spacing: 1px;
+  margin-bottom:2em;
+}
+.navbar{
+  margin:0px;
+}
+.navbar-toggle{
+  padding:0px;
+  padding-top:2em;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.icon-bar{
+  background-color:#fff;
 }
 #page{
   padding: 35px 60px;
@@ -30,7 +43,7 @@ p, h1, h2, h3, a{
 }
 .ascii-title{
   white-space:pre;
-  margin: 0 0 50px 0;
+  /*margin: 0 0 50px 0;*/
 }
 .ascii-title a, .list-albums-item a{
   text-decoration:none;

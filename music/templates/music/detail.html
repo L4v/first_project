@@ -8,18 +8,22 @@
   </head>
   <body>
     <div id = "page">
-      <div class="container">
-        <div class="col-md-12">
+      <div class="container-fluid">
           <header>
-            <div class="ascii-title">
-              <a href="{% url "music:index" %}">
+            <div class="ascii-title"><!--
+            --><a href="{% url "music:index" %}">
 ××   ××   ××   ××    ××××   ××   ××××
 ××× ×××   ××   ××   ××      ××  ××
 ×× × ××   ××   ××     ××    ××  ××
 ××   ××   ××   ××      ××   ××  ××
-××   ××   ×××××××   ××××    ××   ××××
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------          </a>
-            </div>
+××   ××   ×××××××   ××××    ××   ××××</a></div>
+    <nav class = 'navbar' >
+      <div class="navbar-header">
+
+      </div>
+    </nav>
+<div class = "ascii-title"><a href = "{% url 'music:index' %}">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</a><!--
+--></div>
           </header>
           <div class="col-md-4">
               <img src="{{album.album_logo}}" alt="" />
@@ -30,13 +34,6 @@
 
                 <ul class="list-songs">
                   {% if album.song_set.count %}
-                  <!--{% for song in album.song_set.all %}-->
-                    <!--<li class="list-songs-item"><p>[×]{{ song.song_title }} - {{song.file_type}}</p></li>-->
-                    <!--<li class="list-songs-item">
-                    </li>-->
-
-                  <!--{% endfor %}-->
-
                       <form action="{% url 'music:favorite' album.id %}" method="post">
                       {% csrf_token %}
                       {% for song in album.song_set.all %}
@@ -59,7 +56,6 @@
                   {% endif %}
                 </ul>
           </div>
-      </div>
     </div>
     </div>
     <!--<script src="js/bootstrap.js"></script>-->
