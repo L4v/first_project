@@ -98,6 +98,9 @@ li{
 }
 
 @media only screen and (max-device-width: 480px) {
+  #page{
+    padding: 1vw 2vw;
+  }
   .ascii-title a{
     font-size:1.5vw;
   }
