@@ -38,6 +38,7 @@ header{
 .navbar-nav>li>a{
   padding:0px;
   padding-top:1.5em;
+  color:#c8c8c8;
 }
 .nav>li>a:hover{
   color:#fff;
